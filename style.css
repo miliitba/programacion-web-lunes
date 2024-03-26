@@ -1,5 +1,30 @@
 /*texto*/
 
+
+
+@media screen and (min-width: 600px) {
+
+.container {  display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+gap: 0px 0px;
+grid-auto-flow: row;
+}
+      
+.header { grid-area: header; background-color: blueviolet;}
+      
+.main { grid-area: main; background-color: brown;}
+      
+.footer { grid-area: footer; background-color: black;}
+
+
+      
+    
+    
+    
+}
+
+
 body {
-    background-color: rgb(144, 0, 0)
+    background-color: rgb(84, 141, 127)
 }
