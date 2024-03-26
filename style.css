@@ -1,30 +1,104 @@
-/*texto*/
 
 
+#imagenHeader { 
+    width: 700px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 0px;
+    margin-bottom: 400px;
+    
+}
+
+.header {
+    position: sticky;    /*no me lo deja quieto*/
+    right: 0%;
+    left: 0%;
+    padding: 0%;
+    text-align: center;
+    background-color: #5d4f7d;                 /*PORQUE NO LO CAMBIA EL COLOR AL FONDO DEL TEXTO ????*/
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(95, 152, 243, 0.786);
+    font-size: 20px;
+
+}
+
+.text-over-image {
+    position: absolute; 
+    right: 0%;
+    left: 0%;
+    padding: 0%;
+    margin-bottom: 0px;
+    margin-top: -800px;
+    text-align: center;
+    color: rgb(25, 7, 7); 
+    font-size: 30px; 
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: center;
+    background-color: rgb(255, 255, 255); /
+    
+}
+
+
+.text-over-image2 {
+    position: absolute; 
+    right: 0%;
+    left: 0%;
+    padding: 0%;
+    margin-bottom: 0px;
+    margin-top: -750px;
+    text-align: center;
+    color: rgb(25, 7, 7); 
+    font-size: 30px; 
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: center;
+    background-color: rgb(255, 255, 255); /
+
+
+}
+
+#imagen1Main {
+    width: 300px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+
+
+}
 
 @media screen and (min-width: 600px) {
 
-.container {  display: grid;
+.container {  
+    display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 gap: 0px 0px;
-grid-auto-flow: row;
+grid-auto-flow: row; 
+grid-template-areas: 
+"header header header"
+"main main main"
+"main main main"
+"main main main"
+"footer footer footer";
 }
-      
-.header { grid-area: header; background-color: blueviolet;}
-      
-.main { grid-area: main; background-color: brown;}
-      
-.footer { grid-area: footer; background-color: black;}
 
 
+.header { grid-area: header; background-color: #462020;}
       
-    
-    
+.main { grid-area: main; background-color: #ffffff;}
+
+.main2 { grid-area: 3 / 1 / 4 / 4; background-color: aqua;}
+      
+.footer { grid-area: footer; background-color: #424c55;}
+
     
 }
+
+
+
+
 
 
 body {
-    background-color: rgb(84, 141, 127)
+    background-color: rgb(254, 249, 249)
 }
