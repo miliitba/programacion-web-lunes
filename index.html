@@ -20,7 +20,61 @@
                     SNEAKERS CLUB
                 </h1>
             </header>
-      
+
+
+
+<!-- voy a crear que apretando las tres rayitas
+te abra un menu -->
+
+<div id="nav">
+    <nav>
+        <ul>
+            <li><a href= '#'>NEW IN</a> </li>
+            <li><a href= '#'>NIKE</a> </li>
+            <li><a href= '#'>ADIDAS</a> </li>
+            <li><a href= '#'>OFF-WHITE</a> </li>
+            <li><a href= '#'>MEN</a> </li>
+            <li><a href= '#'>WOMEN</a> </li>
+            <li><a href= '#'>HOME</a> </li>
+        </ul>
+    </nav>
+</div>
+
+<div id = "boton">
+    <img src="34FD5A3B-68E8-4006-AEBC-783FFCA49ECA.JPG"  id="menu">
+</div>
+
+<script>
+    var boton = document.getElementById("boton")
+    var nav = document.getElementById("nav")
+    var menu = document.getElementById("menu")
+
+    boton.onclick = function (){
+        if(nav.style.left == "-250px"){
+            nav.style.left = "0";
+        }
+        else {
+            nav.style.left = "-250px";
+        }
+    }
+
+
+</script>
+
+
+
+    
+            <img src="8D956FC2-2FED-4571-A34B-2D0FC663097A.JPG" alt="lupita" id="lupita">
+            <img src="22673070-9E18-49C7-8EAF-DB7ED6166470.JPG" alt="carrito" id="carrito">
+
+            <div class="botonIzquierda"> 
+                <a href="#">---</a>
+            </div>
+
+            <div class="botonFindOut">
+                <a href="#"><span></span>Find Out More</a>
+
+            </div>
         </div>
 
 <!-- 2 -->
@@ -28,6 +82,10 @@
         <div class="main">
             <div>
                 <img src="https://cdn.flightclub.com/TEMPLATE/376410/1.jpg?w=1200" alt="" id="imagenHeader">
+                <img src="https://cdn.flightclub.com/TEMPLATE/376412/1.jpg?w=1200" alt="bonner bordo" id="bonnerBordo">
+                <img src="https://cdn.flightclub.com/TEMPLATE/376411/1.jpg?w=1200" alt="bonner negras" id="bonnerNegras">
+                <img src="https://cdn.flightclub.com/TEMPLATE/366464/1.jpg?w=1200" alt="bonner plateadas" id="bonnerPlateadas">
+
                 <div class="text-over-image"> NEW </div>
                 <div class="text-over-image2"> WALES BONNER x SAMBA PONY </div> 
             </div>   
@@ -53,5 +111,10 @@
 
 </body>
 </html>
+
+
+
+
+
 
 
