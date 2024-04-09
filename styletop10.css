@@ -1,0 +1,114 @@
+.header {
+    position: fixed;   
+    right: 0%;
+    left: 0%;
+    padding: 0%;
+    text-align: center;
+    background-color: #5d4f7d;                 
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(102, 156, 241, 0.786);
+    font-size: 20px;
+    height: 90px;
+    width: 100% ;
+    font-style: italic;
+
+}
+
+#boton {
+    width: 60px;
+    height: 60px;
+    position: sticky;    /*no me lo deja quieto*/
+    background-color: transparent;   
+    text-align: center;
+    position: fixed;   
+    left: 30px;
+    top: 15px;           
+    border-radius: 3px;
+    cursor: pointer;  
+    z-index: 9;
+}
+
+
+#boton img{   /*agrando la imagen del boton*/
+    width: 70px;
+    margin-top: 7px;
+    z-index: -9;
+}
+
+/*boton para volver al inicio*/
+
+.botonInicio {
+    margin: 70px auto 0;
+    text-align: left;
+    font-family: 'Helvetica-light';
+    
+}
+
+.botonInicio a {
+    width: 300px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px;
+    color: #000000;
+    position: relative;
+    top: 50px;
+    z-index: 7;
+
+}
+
+.botonInicio a span {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top:0%;
+    left:0%;
+    transition: 0.5s;
+    z-index: -7;
+
+}
+
+.fotos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 75px;
+    
+}
+
+#sambaogmarron {
+    width:150%;
+    
+}
+
+#sambacollegiategreengum {
+    width: 150%;
+   
+}
+
+#walesbonnersambascarlet {
+    width: 150%;
+}
+
+
+
+
+
+
+
+
+
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+  }
+  
+  .header { grid-area: 1 / 1 / 2 / 4; background-color: #462020;}
+  
+  .main { grid-area: 2 / 1 / 5 / 4; }
+  
+  .footer { grid-area: 4 / 1 / 5 / 4; }
+  

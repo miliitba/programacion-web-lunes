@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>ZapatillasMili</title>
+    <link rel="stylesheet" href="styleSteve.css">
+</head>
+<body>
+    <header>
+        <h1>SNEAKERS CLUB</h1>
+        <div id = "boton">
+            <img src="34FD5A3B-68E8-4006-AEBC-783FFCA49ECA.JPG"  id="menu">
+
+        <div id="nav">
+            <nav>
+            <ul>
+                <li><a href= '#'>NEW IN</a> </li>
+                <li><a href= '#'>NIKE</a> </li>
+                <li><a href= '#'>ADIDAS</a> </li>
+                <li><a href= '#'>OFF-WHITE</a> </li>
+                <li><a href= '#'>MEN</a> </li>
+                <li><a href= '#'>WOMEN</a> </li>
+                <li><a href= '#'>HOME</a> </li>
+            </ul>
+            </nav>
+        </div>
+        
+            <script>
+                var boton = document.getElementById("boton")
+                var nav = document.getElementById("nav")
+                var menu = document.getElementById("menu")
+             
+             
+                boton.onclick = function (){
+                    if(nav.style.left == "-250px"){
+                        nav.style.left = "0";
+                        menu.src = "1041D0C3-B16F-451E-AB82-680E7DBF7D40.jpg";     <!-- esto hace que cuando apreto el boton de rayas me aparezca una x -->
+                    }
+             
+             
+                    else {
+                        nav.style.left = "-250px";
+                        menu.src = "34FD5A3B-68E8-4006-AEBC-783FFCA49ECA.JPG"
+                    }
+                }
+             
+            </script>
+             
+    
+
+    </header>
+    <main>
+        <div id="Destacada">
+            <div class="texto"> NEW </div>
+                <div class="texto1"> WALES BONNER x SAMBA PONY </div> 
+            <img src="./Proyecto nuevo.jpg" alt="" id="imgDestacada">
+        </div>
+
+        
+        <div id="top10">
+
+            <h2>Top 20 mas vendidas</h2>
+            <div class="comprar">
+                <a href="top10.html" >Ir a comprar</a>
+            </div>
+            
+            <div id="cardstops10">
+                    <div class="card">
+                        <img src="https://cdn.flightclub.com/TEMPLATE/393115/1.jpg?w=1200" alt="" class="cardImg">
+                        <h3>Salehe Bembury x 1906R Heat Be Hot Pack - Lava</h3>
+                        <p>$750</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://cdn.flightclub.com/TEMPLATE/176534/1.jpg?w=1200" alt="" class="cardImg">
+                        <h3>Dior X Air Jordan 1 Low</h3>
+                        <p>$6.450</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://cdn.flightclub.com/TEMPLATE/187687/1.jpg?w=1200" alt="" class="cardImg">
+                        <h3>Ben & Jerry's X Dunk Low SB 'Chunky Dunky'</h3>
+                        <p>$1.320</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://cdn.flightclub.com/TEMPLATE/238596/1.jpg?w=1200" alt="" class="cardImg">
+                        <h3>Samba OG 'White Black Gum'</h3>
+                        <p>$83</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://cdn.flightclub.com/TEMPLATE/370528/1.jpg?w=1200" alt="" class="cardImg">
+                        <h3>Yeezy Boost 350 V2 'Steel Grey'</h3>
+                        <p>$245</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://cdn.flightclub.com/TEMPLATE/307403/1.jpg?w=1200" alt="" class="cardImg">
+                        <h3>Yeezy 500 'Granite'</h3>
+                        <p>$325</p>
+                    </div>                    <div class="card">
+                        <img src="https://cdn.flightclub.com/TEMPLATE/404154/1.jpg?w=1200" alt="" class="cardImg">
+                        <h3>Dunk Low Retro VOL. 1 SP 'Plum' 2024</h3>
+                        <p>$137</p>
+                    </div>                    <div class="card">
+                        <img src="https://cdn.flightclub.com/TEMPLATE/050815/1.jpg?w=1200" alt="" class="cardImg">
+                        <h3>Air Max 90 Premium 'Warhawk'</h3>
+                        <p>$2.600</p>
+                    </div>                    
+
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+        <span>Envio gratis a partir de $100</span>
+        <span>2024 Sneakers club Buenos Aires</span>
+        <span>Envio gratis a partir de $100</span>
+        <span>2024 Sneakers club Buenos Aires</span>
+        <span>Envio gratis a partir de $100</span>
+        <span>2024 Sneakers club Buenos Aires</span>
+      </marquee>
+    </footer>
+
+    
+
+
+
+</body>
+</html>
