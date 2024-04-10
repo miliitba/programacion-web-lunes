@@ -1,17 +1,49 @@
-.header {
-    position: fixed;   
-    right: 0%;
-    left: 0%;
-    padding: 0%;
+body{
+    margin:0px;
+}
+
+header h1,header ul, header li{
+    display: inline;
+    
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 20px;
     text-align: center;
-    background-color: #5d4f7d;                 
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #462020;                 
+    font-family: 'Helvetica-light';
     color: rgba(102, 156, 241, 0.786);
     font-size: 20px;
-    height: 90px;
-    width: 100% ;
     font-style: italic;
+    height: 80px;
+}
 
+
+/*NAV*/
+#nav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    left: -250px;
+    top: 0;
+    background: #978e8e;
+    z-index: 8;
+    transition: 0.5s;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin: 50px 20px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 #boton {
@@ -33,82 +65,174 @@
     width: 70px;
     margin-top: 7px;
     z-index: -9;
-}
 
-/*boton para volver al inicio*/
+}
 
 .botonInicio {
-    margin: 70px auto 0;
-    text-align: left;
     font-family: 'Helvetica-light';
-    
-}
-
-.botonInicio a {
-    width: 300px;
-    text-decoration: none;
-    display: inline-block;
-    padding: 12px;
-    color: #000000;
-    position: relative;
-    top: 50px;
-    z-index: 7;
-
-}
-
-.botonInicio a span {
-    width: 0%;
-    height: 100%;
-    position: absolute;
-    top:0%;
-    left:0%;
-    transition: 0.5s;
-    z-index: -7;
-
-}
-
-.fotos {
-    display: flex;
-    justify-content: center;
+    margin-top: 150px;
+    justify-content: left;
     align-items: center;
+    display: flex;
+    
+      
+      
+}
+
+#cardstops10 {
+    display: flex;
     flex-direction: row;
-    margin: 75px;
-    
+    justify-content: center; /* Alinea las tarjetas horizontalmente en el centro */
+    flex-wrap: wrap ;
+    row-gap: 30px;
+    margin-top: 50px;
+    grid-gap: 40px;
 }
 
-#sambaogmarron {
-    width:150%;
-    
+.card {
+    border: 1px solid rgb(4, 3, 3);
+    border-radius: 0%;
+    padding: 20px;
+    max-width: 300px; /* Establece un ancho máximo para cada tarjeta */
+    margin: 0 10px; /* Agrega un espacio horizontal entre las tarjetas */
 }
 
-#sambacollegiategreengum {
-    width: 150%;
-   
-}
-
-#walesbonnersambascarlet {
-    width: 150%;
+.cardImg{
+    width: 200px;
+ 
 }
 
 
+#cardstops102 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Alinea las tarjetas horizontalmente en el centro */
+    flex-wrap: wrap ;
+    row-gap: 20px;
+    margin-top: 100px;
+    grid-gap: 20px;
+}
+
+.card {
+    border: 1px solid rgb(4, 3, 3);
+    border-radius: 0%;
+    padding: 10px;
+    max-width: 300px; /* Establece un ancho máximo para cada tarjeta */
+    margin: 0 10px; /* Agrega un espacio horizontal entre las tarjetas */
+}
+
+.cardImg{
+    width: 300px;
+}
+
+#cardstops103 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Alinea las tarjetas horizontalmente en el centro */
+    flex-wrap: wrap ;
+    row-gap: 20px;
+    margin-top: 100px;
+    grid-gap: 20px;
+}
+
+.card {
+    border: 1px solid rgb(4, 3, 3);
+    border-radius: 0%;
+    padding: 10px;
+    max-width: 300px; /* Establece un ancho máximo para cada tarjeta */
+    margin: 0 10px; /* Agrega un espacio horizontal entre las tarjetas */
+}
+
+.cardImg{
+    width: 300px;
+}
+
+#cardstops104 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Alinea las tarjetas horizontalmente en el centro */
+    flex-wrap: wrap ;
+    row-gap: 20px;
+    margin-top: 100px;
+    grid-gap: 20px;
+}
+
+.card {
+    border: 1px solid rgb(4, 3, 3);
+    border-radius: 0%;
+    padding: 10px;
+    max-width: 300px; /* Establece un ancho máximo para cada tarjeta */
+    margin: 0 10px; /* Agrega un espacio horizontal entre las tarjetas */
+}
+
+.cardImg{
+    width: 300px;
+}
+
+#cardstops105 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Alinea las tarjetas horizontalmente en el centro */
+    flex-wrap: wrap ;
+    row-gap: 20px;
+    margin-top: 100px;
+    grid-gap: 20px;
+}
+
+.card {
+    border: 1px solid rgb(4, 3, 3);
+    border-radius: 0%;
+    padding: 10px;
+    max-width: 300px; /* Establece un ancho máximo para cada tarjeta */
+    margin: 0 10px; /* Agrega un espacio horizontal entre las tarjetas */
+}
+
+.cardImg{
+    width: 300px;
+}
 
 
 
+footer{
+    margin-top: 0px;
+    padding: 20px 0;               /*este hizo que se centre el texto*/
+    background-color: grey;
+    top: 0;
+    width: 100%;
+    text-align: center;               
+    font-family: 'Helvetica-light';
+    color: rgba(2, 2, 2, 0.786);
+    font-size: 20px;
+    font-style: italic;
+    height: 20px;
 
+}
 
-
-
-
-.container {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
+marquee span {
+    margin-right: 60px;
   }
-  
-  .header { grid-area: 1 / 1 / 2 / 4; background-color: #462020;}
-  
-  .main { grid-area: 2 / 1 / 5 / 4; }
-  
-  .footer { grid-area: 4 / 1 / 5 / 4; }
-  
+
+
+  @media screen and (max-width: 770px) {
+    header {
+        font-size: 12px;
+        padding-top: 30px;
+    }
+    #boton img{
+        width: 50px;
+        margin-right: 10px;
+    }
+
+    #top10 {
+        font-size: 15px;
+    }
+
+    .card {
+        max-width: 100px;
+    }
+
+    .cardImg{
+        width: 100px;
+    }
+
+  }

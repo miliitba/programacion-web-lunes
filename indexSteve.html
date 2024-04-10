@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styleSteve.css">
 </head>
 <body>
+
+<!-- header -->
     <header>
         <h1>SNEAKERS CLUB</h1>
         <div id = "boton">
@@ -48,8 +50,11 @@
             </script>
              
     
-
     </header>
+
+
+
+<!-- main -->
     <main>
         <div id="Destacada">
             <div class="texto"> NEW </div>
@@ -109,18 +114,34 @@
         </div>
     </main>
     
+    
     <footer>
-    <marquee behavior="scroll" direction="left" scrollamount="5">
-        <span>Envio gratis a partir de $100</span>
-        <span>2024 Sneakers club Buenos Aires</span>
-        <span>Envio gratis a partir de $100</span>
-        <span>2024 Sneakers club Buenos Aires</span>
-        <span>Envio gratis a partir de $100</span>
-        <span>2024 Sneakers club Buenos Aires</span>
-      </marquee>
+
+
+        <div class="newsletter">
+            <h2>Suscríbete a nuestro newsletter</h2>
+            <form action="/newsletter/subscribe" method="post">
+              <label for="email">Tu email:</label>
+              <input type="email" name="email" id="email" placeholder="Ingrese su email">
+              <button type="submit">Suscribirse</button>
+            </form>
+            <p>Recibiras notificaciones sobre descuentos y muchos mas beneficios.</p>
+            
+          </div>
+          
+
+
+        <marquee behavior="scroll" direction="left" scrollamount="5" id="marquee">
+            <span>Envio gratis a partir de $100</span>
+            <span>2024 Sneakers club Buenos Aires</span>
+            <span>Envio gratis a partir de $100</span>
+            <span>2024 Sneakers club Buenos Aires</span>
+            <span>Envio gratis a partir de $100</span>
+            <span>2024 Sneakers club Buenos Aires</span>
+        </marquee>
     </footer>
 
-    
+
 
 
 

@@ -32,7 +32,7 @@ header{
 }
 
 #imgDestacada {
-    width: 70%; /* Ajustado para ocupar todo el ancho del contenedor */
+    width: 70%; 
     justify-content: center;
     margin-bottom: 100px;
     
@@ -43,26 +43,39 @@ header{
 }
 
 .comprar {
-    
-    display: flex;
-    justify-content: flex-end; /* Alinea el enlace a la derecha */
-    align-items: center; /* Alinea verticalmente con el texto */
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    margin-left: 650px;
 }
+
+.comprar:hover {
+    background-color: #ddd;
+    
+  }
+
 
 #cardstops10 {
     display: flex;
     flex-direction: row;
     justify-content: center; /* Alinea las tarjetas horizontalmente en el centro */
     flex-wrap: wrap ;
-    row-gap: 20px;
+    row-gap: 30px;
+    
 }
 
 .card {
-    border: 1px solid rgb(4, 3, 3);
-    border-radius: 0%;
+    border: 0.2px solid rgb(4, 3, 3);
+    border-radius: 8%;
     padding: 10px;
     max-width: 300px; /* Establece un ancho máximo para cada tarjeta */
     margin: 0 10px; /* Agrega un espacio horizontal entre las tarjetas */
+    margin-top: 20px;
 }
 
 .cardImg{
@@ -142,25 +155,84 @@ nav ul li a {
 
 
 
-
 footer{
-    margin-top: 70px;
-    padding: 20px 0;               /*este hizo que se centre el texto*/
-    background-color: grey;
+    margin-top: 90px;
+    padding: 10px 0;               /*este hizo que se centre el texto*/
+    background-color: rgb(255, 254, 254);
     top: 0;
     width: 100%;
     text-align: center;               
     font-family: 'Helvetica-light';
     color: rgba(2, 2, 2, 0.786);
-    font-size: 20px;
+    font-size: 15px;
     font-style: italic;
-    height: 20px;
-    
+    height: 300px;
+    border: 1px solid rgb(4, 3, 3); /* Borde de 1px sólido de color negro */
+    box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño total */
     
 
 }
 
 marquee span {
-    margin-right: 60px;
+    margin-right: 50px;
   }
 
+#marquee {
+    background-color: #9c9494;
+    margin-top: 100px;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Helvetica-light';
+    text-align: center;
+    
+}
+
+.marquee-item {
+    margin-top: 10px;
+
+}
+
+
+@media screen and (max-width: 770px) {
+    .texto {
+        font-size: 50px; 
+        }    
+    .texto1 {
+        font-size: 20px;
+        }
+    header {
+        font-size: 12px;
+        padding-top: 30px;
+        text-align: center;
+        margin-left: 0px;
+
+    }
+    #boton img{
+        width: 50px;
+        margin-right: 10px;
+    }
+
+    #imgDestacada {
+        width: 100%; 
+    }
+
+    #top10 {
+        font-size: 15px;
+        text-align: center;
+        
+}
+
+    .card {
+        max-width: 140px;
+
+    }
+
+    .cardImg{
+        width: 100px;
+    }
+
+    .comprar{
+        margin-left: 130px;
+    }
+
+}
