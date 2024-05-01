@@ -145,18 +145,18 @@ header{
     background: #978e8e;
     z-index: 8;
     transition: 0.5s;
-
 }
 
 nav ul li {
     list-style: none;
-    margin: 50px 20px;
-
+    margin: 10px 0;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #ffffff;
+    display: block;
+    margin-bottom: 50px;
 }
 
 
