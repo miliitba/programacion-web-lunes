@@ -1,0 +1,217 @@
+body{
+    margin: 0;
+    font-family: Poppins;
+    background-color: #818181;
+}
+
+.botonInicio {
+    text-align: left; 
+    margin-bottom: 20px; 
+}
+
+.listProduct .item img {
+    width: 90%;
+    filter: drop-shadow(0 50px 20px #0009);
+    margin-top: 20px; 
+}
+
+.title {
+    font-family: Arial, sans-serif; 
+    color: #462020; 
+    font-weight: bold;
+}
+
+div.botonInicio a {
+    color: #462020; 
+}
+
+.container{
+    width: 900px;
+    margin: auto;
+    max-width: 90vw;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform .5s;
+}
+svg{
+    width: 30px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.icon-cart{
+    position: relative;
+    color: whitesmoke;
+}
+.icon-cart span{
+    position: absolute;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #ffffff;
+    top: 50%;
+    right: -20px;
+}
+.title{
+    font-size: xx-large;
+}
+.listProduct .item img{
+    width: 90%;
+    filter: drop-shadow(0 50px 20px rgba(27, 26, 26, 0.6));
+}
+.listProduct{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.listProduct .item{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+}
+.listProduct .item h2{
+    font-weight: 500;
+    font-size: large;
+}
+.listProduct .item .price{
+    letter-spacing: 7px;
+    font-size: small;
+}
+.listProduct .item button{
+    background-color: #353432;
+    color: #eee;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+/* cart */
+.cartTab{
+    width: 400px;
+    background-color: #ffffff;
+    color: #060606;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+    z-index: 10000;
+}
+body.showCart .cartTab{
+    right: 0;
+}
+body.showCart .container{
+    transform: translateX(-250px);
+}
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cartTab button{
+    background-color: #E8BC0E;
+    border: none;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+}
+.cartTab .close{
+    background-color: #eee;
+}
+.listCart .item img{
+    width: 100%;
+}
+.listCart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    color: #0b0b0b;
+    cursor: pointer;
+}
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #0c0b0b;
+    cursor: auto;
+}
+.listCart .item:nth-child(even){
+    background-color: #eee1;
+}
+.listCart{
+    overflow: auto;
+}
+.listCart::-webkit-scrollbar{
+    width: 0;
+}
+.totalCart {
+    text-align: right; 
+    margin-top: 0px; 
+}
+
+
+footer{
+    margin-top: 120px;
+    padding: 10px 0;               
+    background-color: rgb(255, 254, 254);
+    top: 0;
+    width: 100%;
+    text-align: center;               
+    font-family: 'Helvetica-light';
+    color: rgba(2, 2, 2, 0.786);
+    font-size: 15px;
+    font-style: italic;
+    height: 400px;
+    border: 1px solid rgb(4, 3, 3); 
+    box-sizing: border-box; 
+}
+
+footer img {
+    width: 155px; /* Ajuste para hacer las imágenes más pequeñas */
+}
+
+
+#marquee {
+    background-color: #818181;
+    margin-top: 100px;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Helvetica-light';
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+#marquee span {
+    margin-right: 50px; /* Ajusta el espacio entre palabras */
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .listProduct{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

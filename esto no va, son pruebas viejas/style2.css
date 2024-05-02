@@ -1,36 +1,6 @@
-body{
-    margin:0px;
-}
 
-header h1,header ul, header li{
-    display: inline;
-    
-}
 
-header{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding-top: 20px;
-    text-align: center;
-    background-color: #462020;                 
-    font-family: 'Helvetica-light';
-    color: rgba(102, 156, 241, 0.786);
-    font-size: 20px;
-    font-style: italic;
-    height: 80px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    z-index: 999;
-}
-
-h1 a {
-    color: rgba(102, 156, 241, 0.786);
-}
-
-/*carrito*/
-.contenedor2 {
+.imagenCarrito{
     width: 900px;
     max-width: 90vw;
     margin: auto;
@@ -42,24 +12,25 @@ svg{
     width: 30px;
 }
 
-.imagenCarrito{
-    left: 1300px;
-    bottom: 60px;
-    color: whitesmoke
-
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
 }
 
-header .imagenCarrito{
+header .icon-card{
     position: relative;
 }
 
-header .imagenCarrito span{
+header .icon-card span{
     display: flex;
     width: 30px;
     height: 30px;
     background-color: red;
     justify-content: center;
     align-items: center;
+    color: white;
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -88,7 +59,6 @@ body .mostrarCarrito .shopping{
 body .mostrarCarrito .contenedor2{
     transform: translateX(-250px);
 }
-
 
 .shopping h1{
     padding: 20px;
