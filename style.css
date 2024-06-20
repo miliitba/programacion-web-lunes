@@ -1,19 +1,27 @@
-body{
-    margin:0px;
+body {
+    margin: 0px;
 }
 
-header h1,header ul, header li{
+a {
+    color: black; 
+    text-decoration: none; 
+}
+.card h3,
+.card p {
+    color: black; 
+}
+
+header h1, header ul, header li {
     display: inline;
-    
 }
 
-header{
+header {
     position: fixed;
     top: 0;
     width: 100%;
     padding-top: 20px;
     text-align: center;
-    background-color: #462020;                 
+    background-color: #462020;
     font-family: 'Helvetica-light';
     color: rgba(102, 156, 241, 0.786);
     font-size: 20px;
@@ -28,20 +36,17 @@ header{
 }
 
 #Destacada {
-    margin-top:200px ;
+    margin-top: 200px;
     display: flex;
     justify-content: center;
-    flex-direction: column; /* Agregado para que los elementos estén en columna */
-    align-items: center; /* Opcional: centrar horizontalmente los elementos */
- 
-  
+    flex-direction: column; 
+    align-items: center; 
 }
 
 #imgDestacada {
-    width: 70%; 
+    width: 70%;
     justify-content: center;
     margin-bottom: 100px;
-    
 }
 
 #top10 {
@@ -62,80 +67,70 @@ header{
 
 .comprar:hover {
     background-color: #ddd;
-    
-  }
-
+}
 
 #cardstops10 {
     display: flex;
     flex-direction: row;
-    justify-content: center; /* Alinea las tarjetas horizontalmente en el centro */
-    flex-wrap: wrap ;
+    justify-content: center; 
+    flex-wrap: wrap;
     row-gap: 30px;
-    
 }
 
 .card {
     border: 0.2px solid rgb(4, 3, 3);
     border-radius: 8%;
     padding: 10px;
-    max-width: 300px; /* Establece un ancho máximo para cada tarjeta */
-    margin: 0 10px; /* Agrega un espacio horizontal entre las tarjetas */
+    max-width: 300px; 
+    margin: 0 10px; 
     margin-top: 20px;
 }
 
-.cardImg{
+.cardImg {
     width: 300px;
 }
 
-
+.card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
 
 .texto {
-    font-size: 100px; 
-    font-family: 'Sailec','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 100px;
+    font-family: 'Sailec', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: bold;
     margin-top: -60px;
-
 }
-
 
 .texto1 {
-    font-family: 'Sailec','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: 'Sailec', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 50px;
-
 }
-
-
 
 .comprar {
     margin-right: 20px;
-
 }
-
 
 #boton {
     width: 60px;
     height: 60px;
-    position: sticky;    /*no me lo deja quieto*/
-    background-color: transparent;   
+    position: sticky; 
+    background-color: transparent;
     text-align: center;
-    position: fixed;   
+    position: fixed;
     left: 30px;
-    top: 15px;           
+    top: 15px;
     border-radius: 3px;
-    cursor: pointer;  
+    cursor: pointer;
     z-index: 9;
 }
 
-
-#boton img{   /*agrando la imagen del boton*/
+#boton img { 
     width: 70px;
     margin-top: 7px;
     z-index: -9;
-
 }
 
-/*NAV*/
+/* NAV */
 #nav {
     width: 250px;
     height: 100vh;
@@ -159,26 +154,20 @@ nav ul li a {
     margin-bottom: 50px;
 }
 
-
-
-footer{
+footer {
     margin-top: 90px;
-    padding: 10px 0;               
+    padding: 10px 0;
     background-color: rgb(255, 254, 254);
-    top: 0;
     width: 100%;
-    text-align: center;               
+    text-align: center;
     font-family: 'Helvetica-light';
     color: rgba(2, 2, 2, 0.786);
     font-size: 15px;
     font-style: italic;
     height: 400px;
-    border: 1px solid rgb(4, 3, 3); 
-    box-sizing: border-box; 
-    
-    
+    border: 1px solid rgb(4, 3, 3);
+    box-sizing: border-box;
 }
-
 
 #marquee {
     background-color: #9c9494;
@@ -191,62 +180,107 @@ footer{
     align-items: center;
     justify-content: center;
 }
-    
+
 #marquee span {
-    margin-right: 50px; /* Ajusta el espacio entre palabras */
+    margin-right: 50px;
 }
-
-
 
 #logos {
     width: 15%;
-
 }
 
+.carousel {
+    position: relative;
+    width: 100%; 
+    overflow: hidden;
+}
 
+.carousel-content {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-content img {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#prevBtn {
+    left: 0;
+}
+
+#nextBtn {
+    right: 0;
+}
+
+/* Estilos para el contenedor del formulario de suscripción en el footer */
+.newsletter {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.newsletter button[type="submit"] {
+    padding: 10px 20px;
+}
 
 @media screen and (max-width: 770px) {
     .texto {
-        font-size: 50px; 
-        }    
+        font-size: 50px;
+    }
     .texto1 {
         font-size: 20px;
-        }
+    }
     header {
         font-size: 12px;
         padding-top: 30px;
         text-align: center;
         margin-left: 0px;
-
     }
-    #boton img{
+    #boton img {
         width: 50px;
         margin-right: 10px;
     }
-
     #imgDestacada {
-        width: 100%; 
+        width: 100%;
     }
-
     #top10 {
         font-size: 15px;
         text-align: center;
-        
-}
-
+    }
     .card {
         max-width: 140px;
-
     }
-
-    .cardImg{
+    .cardImg {
         width: 100px;
     }
-
-    .comprar{
+    .comprar {
         margin-left: 130px;
     }
-
-
-
 }
+

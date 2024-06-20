@@ -15,10 +15,9 @@ closeCart.addEventListener('click', () => {
 });
 
 const addDataToHTML = () => {
-    // Remove existing product elements
+
     listProductHTML.innerHTML = '';
 
-    // Add new product elements
     if (products.length > 0) {
         products.forEach(product => {
             let newProduct = document.createElement('div');
@@ -63,7 +62,7 @@ const addCartToMemory = () => {
 const addCartToHTML = () => {
     listCartHTML.innerHTML = '';
     let totalQuantity = 0;
-    let totalPrice = 0; // Agregar una variable para almacenar el precio total
+    let totalPrice = 0; 
 
     if (cart.length > 0) {
         cart.forEach(item => {
@@ -85,14 +84,10 @@ const addCartToHTML = () => {
                     <span class="plus">+</span>
                 </div>`;
             listCartHTML.appendChild(newItem);
-
-            // Sumar el precio total
             totalPrice += info.price * item.quantity;
         });
     }
     iconCartSpan.innerText = totalQuantity;
-
-    // Mostrar el precio total en el elemento totalCart
     document.getElementById('totalAmount').innerText = totalPrice;
 };
 
@@ -127,19 +122,38 @@ const changeQuantityCart = (product_id, type) => {
 };
 
 const initApp = () => {
-    // Fetch product data
+
     fetch('products.json')
         .then(response => response.json())
         .then(data => {
             products = data;
             addDataToHTML();
 
-            // Get cart data from local storage
             if (localStorage.getItem('cart')) {
                 cart = JSON.parse(localStorage.getItem('cart'));
                 addCartToHTML();
             }
         });
 };
+
+document.addEventListener('DOMContentLoaded', function () {
+    const checkoutBtn = document.querySelector('.checkOut');
+    const cartItems = document.querySelector('.listCart');
+
+    checkoutBtn.addEventListener('click', function () {
+        const popup = document.getElementById('popup');
+        popup.classList.add('active');
+
+        setTimeout(function() {
+            popup.classList.remove('active');
+        }, 3000);
+
+        cartItems.innerHTML = '';
+        document.querySelector('.icon-cart span').textContent = '0';
+        document.getElementById('totalAmount').textContent = '0';
+        localStorage.removeItem('cart');
+        cart = [];
+    });
+});
 
 initApp();

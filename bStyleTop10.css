@@ -188,7 +188,7 @@ footer{
 }
 
 footer img {
-    width: 155px; /* Ajuste para hacer las imágenes más pequeñas */
+    width: 155px; 
 }
 
 
@@ -205,10 +205,31 @@ footer img {
 }
     
 #marquee span {
-    margin-right: 50px; /* Ajusta el espacio entre palabras */
+    margin-right: 50px; 
 }
 
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+}
 
+.popup-message {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.popup-container.active {
+    display: block;
+}
 
 @media only screen and (max-width: 768px) {
     .listProduct{

@@ -6,17 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./bStyleTop10.css">
 
-    <style>
-        a {
-            color: black;
-            text-decoration: none;
-        }
-
-        .card h3,
-        .card p {
-            color: black;
-        }
-    </style>
+   
 </head>
 <body class="showCart">
     
@@ -31,13 +21,13 @@
             </div>
         </header>
 
-    <div class="botonInicio">
+        <div class="botonInicio">
             <a href="index.html">
                 <span>Inicio</span>
                 <span> > </span>
                 <span>Top 20 mas vendidas</span>
             </a>
-    </div>
+        </div>
 
         <div class="listProduct">
             <div class="item">
@@ -45,7 +35,7 @@
                 <h2>Dunk Low Premium SB 'City of love collection'</h2>
                 <div class="price">$87</div>
                 <button class="addCart">
-                    Add To Card
+                    Add To Cart
                 </button>
             </div>
         </div>
@@ -70,10 +60,9 @@
                     <span class="plus">+</span>
                 </div>
             </div>
-            
         </div>
         <div class="totalCart">
-            Total: $<span id="totalAmount">0</span>
+            Total: $<span id="totalAmount">87</span> 
         </div>
         <div class="btn">
             <button class="close">CLOSE</button>
@@ -81,9 +70,13 @@
         </div>
     </div>
 
+
+    <div class="popup-container" id="popup">
+        <div class="popup-message">Compra realizada</div>
+    </div>
+
+
     <footer>
-
-
         <div class="newsletter">
             <h2>Suscríbete a nuestro newsletter</h2>
             <form action="/newsletter/subscribe" method="post">
@@ -91,23 +84,22 @@
                 <input type="email" name="email" id="email" placeholder="Ingrese su email">
                 <button type="submit">Suscribirse</button>
             </form>
-            <p>Recibiras notificaciones sobre descuentos y muchos mas beneficios.</p>
-
+            <p>Recibirás notificaciones sobre descuentos y muchos más beneficios.</p>
         </div>
-
         <img src="https://img.freepik.com/vector-premium/icono-facebook-instagram-tiktok_469489-860.jpg"
             alt="" id="logos">
-
         <marquee behavior="scroll" direction="left" scrollamount="5" id="marquee">
-            <span>Envio gratis a partir de $100</span>
+            <span>Envío gratis a partir de $100</span>
             <span>2024 Sneakers club Buenos Aires</span>
-            <span>Envio gratis a partir de $100</span>
+            <span>Envío gratis a partir de $100</span>
             <span>2024 Sneakers club Buenos Aires</span>
-            <span>Envio gratis a partir de $100</span>
+            <span>Envío gratis a partir de $100</span>
             <span>2024 Sneakers club Buenos Aires</span>
         </marquee>
-</footer>
+    </footer>
 
     <script src="./bb.javaTop10.js"></script>
+    
+
 </body>
 </html>
